@@ -68,7 +68,7 @@ public class ProductDAODerby implements ProductDAO{
                 statement.executeUpdate(sql);
             }
         } catch (Exception e) {
-            throw new ProductDAOException("Search Failed", e);
+            throw new ProductDAOException("Drop Table Failed", e);
         }
      }
 }
